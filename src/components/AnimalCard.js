@@ -35,8 +35,8 @@ function AnimalCard({ animal, onDeleteAnimal, onUpdateAnimal }) {
     }
   return (
     <li className="card">
-      <img src={animal.image} alt={animal.name} />
-      <h4>{animal.name}</h4>
+      <img src={image} alt={name} />
+      <h4>{name}</h4>
       {isAvailable ? (
         <button className="primary" onClick={handleToggleAvailable}>
           Available
