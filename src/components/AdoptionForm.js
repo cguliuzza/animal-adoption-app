@@ -3,7 +3,7 @@ import React from 'react'
 const AdoptionForm = () => {
     return (
         <div>
-            This is the adoption form
+          <p>This is the adoption form.</p>
         </div>
     )
 }
