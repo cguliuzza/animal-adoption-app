@@ -10,7 +10,8 @@ return (
     <div className="app">
       <BrowserRouter>
         <Header />
-        <Route path="/animals" component={AnimalPage} />
+        <Route exact path="/animals" component={AnimalPage} />
+        <Route exact path="/" component={Home} />
       </BrowserRouter>
     </div>
   );
