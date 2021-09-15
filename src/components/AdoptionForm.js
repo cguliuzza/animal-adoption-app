@@ -4,6 +4,7 @@ import { Form } from 'react-bootstrap';
 const AdoptionForm = () => {
     return (
         <div>
+<<<<<<< HEAD
             <p>Adoption Form here</p>
             <Form>
                 <form class="row g-3">
@@ -51,6 +52,9 @@ const AdoptionForm = () => {
                     </div>
                 </form>
             </Form>
+=======
+          <p>This is the adoption form.</p>
+>>>>>>> 2b1dbe4693be1300c552360d5c41191699e8be8d
         </div>
     )
 }
