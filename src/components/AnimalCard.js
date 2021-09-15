@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 
 function AnimalCard({ animal, onDeleteAnimal, onUpdateAnimal }) {
-    const { id, name, image } = animal;
   
     const [isAvailable, setIsAvailable] = useState(true);
     const [updatedAnimal, setUpdatedAnimal] = useState(animal);
@@ -12,7 +11,7 @@ function AnimalCard({ animal, onDeleteAnimal, onUpdateAnimal }) {
 
     function handlePriceFormSubmit(e) {
         e.preventDefault();
-        fetch(`http://localhost:3000/animals/${id}`, {
+        fetch(`http://localhost:3000/animals/${animal.id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -27,16 +26,16 @@ function AnimalCard({ animal, onDeleteAnimal, onUpdateAnimal }) {
     
   
     function handleDeleteClick() {
-      fetch(`http://localhost:3000/animals/${id}`, {
+      fetch(`http://localhost:3000/animals/${animal.id}`, {
         method: "DELETE",
       });
   
-      onDeleteAnimal(id);
+      onDeleteAnimal(animal.id);
     }
   return (
     <li className="card">
-      <img src={image} alt={name} />
-      <h4>{name}</h4>
+      <img src={animal.image} alt={animal.name} />
+      <h4>{animal.name}</h4>
       {isAvailable ? (
         <button className="primary" onClick={handleToggleAvailable}>
           Available
