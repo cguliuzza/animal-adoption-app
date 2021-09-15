@@ -10,7 +10,7 @@ function AnimalPage() {
   useEffect(() => {
     fetch("http://localhost:3000/animals")
     .then(res => res.json())
-    .then(setAnimals)
+    .then(data => setAnimals(data))
   }, [])
 
   const renderNewAnimal = (newAnimal) => {
