@@ -5,7 +5,6 @@ import { Carousel } from 'react-bootstrap'
 const Home = () => {
     return (
         <div>
-<<<<<<< HEAD
             <AdoptionForm />
             <Carousel>
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -30,9 +29,6 @@ const Home = () => {
                     </button>
                 </div>
             </Carousel>
-=======
-          <p>This is the home page.</p>
->>>>>>> 2b1dbe4693be1300c552360d5c41191699e8be8d
         </div>
     )
 }
