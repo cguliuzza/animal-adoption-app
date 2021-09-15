@@ -21,7 +21,7 @@ function Header() {
               <div class="navbar-nav">
                 <ul>
                   <li>
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/"><h6 className="text-secondary">Home</h6></a>
                   </li>
                   <li>
                     <a class="nav-link" href="/new">Add New Pet</a>
