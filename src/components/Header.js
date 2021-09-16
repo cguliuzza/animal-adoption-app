@@ -4,12 +4,6 @@ import { Navbar } from "react-bootstrap"
 function Header() {
   return (
     <header>
-      <h1>
-        Animals App
-        <span className="logo" role="img">
-          🌱
-        </span>
-      </h1>
       <Navbar>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
@@ -24,10 +18,10 @@ function Header() {
                     <a class="nav-link active" aria-current="page" href="/"><h6 className="text-secondary">Home</h6></a>
                   </li>
                   <li>
-                    <a class="nav-link" href="/new">Add New Pet</a>
+                    <a class="nav-link" href="/new"><h6 className="text-secondary">Add New Pet</h6></a>
                   </li>
                   <li>
-                    <a class="nav-link" href="/animals">Animals for Adoption</a>
+                    <a class="nav-link" href="/animals"><h6 className="text-secondary">Animals for Adoption</h6></a>
                   </li>
                 </ul>
               </div>
@@ -35,8 +29,13 @@ function Header() {
           </div>
         </nav>
       </Navbar>
+      <h1>
+        Animals App
+      </h1>
+      <img src="./src/images/Logo-bright-pink.PNG" className="logo" role="img" alt="Happy Tails Pet Adoption Logo" />
     </header>
   );
 }
 
 export default Header;
+

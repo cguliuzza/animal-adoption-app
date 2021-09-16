@@ -1,11 +1,9 @@
 import React from 'react'
-import AdoptionForm from './AdoptionForm'
 import { Carousel } from 'react-bootstrap'
 
 const Home = () => {
     return (
         <div>
-            <AdoptionForm />
             <Carousel>
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
