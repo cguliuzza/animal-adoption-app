@@ -4,7 +4,7 @@ import { Carousel } from 'react-bootstrap'
 const Home = () => {
     return (
         <div>
-            <Carousel>
+            <Carousel className="carousel-element">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">

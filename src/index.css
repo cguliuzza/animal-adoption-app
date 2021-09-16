@@ -33,12 +33,7 @@ button.primary {
   max-width: 1200px;
 }
 
-header h1 {
-  font-size: 2.5em;
-  font-weight: 900;
-  text-align: center;
-  padding: 0.5rem 0;
-}
+
 
 header nav {
   width: 100%;
@@ -49,30 +44,41 @@ nav {
   text-align: center;
   margin: 20px 0 0 ;
   padding: 10px 0;
-  }
+}
   
-  nav ul{
-    list-style: none;
-    margin: 0 2px;
-    padding: 0;
-  }
+nav ul{
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+}
   
-  nav li {
-     display: inline-block;
-     padding: 5px 5px;
-  }
+nav li {
+  display: inline-block;
+  padding: 5px 5px;
+}
   
-  nav a {
-    font-weight: normal;
-    padding: 10px 5px;
-    font-size: .80em;
-  }
+nav a {
+  font-weight: normal;
+  padding: 10px 5px;
+  font-size: .80em;
+}
 
 .logo {
-  font-size: 1.25em;
-  padding-left: 0.5rem;
-  color: transparent;
-  text-shadow: 0 0 0 var(--green);
+  width: 30%;
+  height: 30%;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-element {
+  width: 100%;
+  height: 100%;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
@@ -99,11 +105,11 @@ main {
   width: 150px;
 }
 
-.searchbar {
+/* .searchbar {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-}
+} */
 
 label {
   font-weight: bold;

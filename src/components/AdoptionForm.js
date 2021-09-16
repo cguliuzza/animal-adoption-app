@@ -4,7 +4,6 @@ import { Form } from 'react-bootstrap';
 const AdoptionForm = () => {
     return (
         <div>
-            <p>Adoption Form here</p>
             <Form>
                 <form class="row g-3">
                     <div class="col-md-6">

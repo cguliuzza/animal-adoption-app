@@ -33,7 +33,6 @@ function AnimalCard({ animal, onDeleteAnimal }) {
       // </li>
       <>
         <Card>
-          <div className="card" style={{width: 18 + 'rem'}}>
             <img src={animal.image} className="card-img-top" alt={animal.name} />
             <div className="card-body">
               <h5 className="card-title">{animal.name}</h5>
@@ -45,7 +44,6 @@ function AnimalCard({ animal, onDeleteAnimal }) {
               {/* <button className="btn btn-primary" onClick={handleDeleteClick}>Delete</button>
               <button className="btn btn-primary" onClick={handleToggleAvailable}>Available</button> */}
             </div>
-          </div>
         </Card>
       </>
     );
