@@ -40,9 +40,9 @@ function AnimalCard({ animal, onDeleteAnimal }) {
               <h6 className="card-subtitle mb-2 text-muted">{animal.gender}</h6>
               <h6 className="card-subtitle mb-2 text-muted">{animal.age}</h6>
               <p className="card-text">{animal.description}</p>
-              <a href="/adoption-form" className="btn btn-primary">View Adoption Form</a>
-              {/* <button className="btn btn-primary" onClick={handleDeleteClick}>Delete</button>
-              <button className="btn btn-primary" onClick={handleToggleAvailable}>Available</button> */}
+              <a href="/adoption-form" className="btn btn-info">View Adoption Form</a>
+               <button className="btn btn-primary" onClick={handleDeleteClick}>Delete</button>
+              {/*<button className="btn btn-primary" onClick={handleToggleAvailable}>Available</button> */}
             </div>
         </Card>
       </>
