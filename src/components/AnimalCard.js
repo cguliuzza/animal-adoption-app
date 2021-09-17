@@ -3,22 +3,29 @@ import { Card } from "react-bootstrap"
 
 // onUpdateAnimal
 function AnimalCard({ animal, handleUpdateAnimal }) {
-  const [isAvailable, setIsAvailable] = useState(true);
 
-    function handleToggleAvailable() {
-
-      let updatedAvailabilityValue = setIsAvailable((isAvailable) => !isAvailable)
+    const toggle = () => {
+      // setIsAvailable(!isAvailable)
+      // console.log(isAvailable)
 
       fetch(`http://localhost:3000/animals/${animal.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ available: updatedAvailabilityValue })
+        body: JSON.stringify({ available: !animal.available })
       })
       .then(resp => resp.json())
-      .then(updatedAnimal => handleUpdateAnimal(updatedAnimal))
-    };
+      .then(updatedAnimal => {
+        handleUpdateAnimal(updatedAnimal)
+        console.log(updatedAnimal)
+      })
+    
+    }
+
+    // function handleToggleAvailable() {
+      
+      
 
 
       // function handleDeleteClick() {
@@ -45,12 +52,12 @@ function AnimalCard({ animal, handleUpdateAnimal }) {
                {/*  {isAvailable ? "Available" : "Pending Adoption"} => STICK THIS IN TEXT AREA BELOW??*/}
               {/* <button className="btn btn-primary" onClick={handleToggleAvailable}>{isAvailable ? "Available" : "Pending Adoption"}</button> */}
 
-              {isAvailable ? (
-                <button className="btn btn-warning" onClick={handleToggleAvailable}>
+              {animal.available ? (
+                <button className="btn btn-warning" onClick={toggle}>
                   Available
                 </button>
               ) : (
-                <button className="btn btn-danger" onClick={handleToggleAvailable}>Pending Adoption</button>
+                <button className="btn btn-danger" onClick={toggle}>Pending Adoption</button>
               )}
             </div>
         </Card>
