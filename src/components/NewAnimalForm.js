@@ -35,21 +35,14 @@ function NewAnimalForm({renderNewAnimal}) {
               <label for="inputPetName" class="col-form-label col-form-label-sm">Animal Name</label>
               <input type="text" class="form-control form-control-sm" id="inputPetName" name="name"></input>
             </div>
-
-
-
             <div class="col-md-4">
-              <label for="inputPicture" class="col-form-label col-form-label-sm">Image URL</label>
-              <input type="text" class="form-control form-control-sm" id="inputPicture" name="image"></input>
+              <label for="inputImage" class="col-form-label col-form-label-sm">Image URL</label>
+              <input type="text" class="form-control form-control-sm" id="inputImage" name="image"></input>
             </div>
-
-
-
             <div class="col-md-4">
               <label for="Type" class="col-form-label col-form-label-sm">Type</label>
               <input type="text" class="form-control form-control-sm" id="inputType" name="type" placeholder="E.g. Dog, cat, etc."></input>
             </div>
-
             <div class="col-md-4">
               <label for="inputPetBreed" class="col-form-label col-form-label-sm">Breed</label>
               <input type="text" class="form-control form-control-sm" id="inputPetBreed" name="breed"></input>
@@ -62,7 +55,6 @@ function NewAnimalForm({renderNewAnimal}) {
               <label for="inputAge" class="col-form-label col-form-label-sm">Age</label>
               <input type="text" class="form-control form-control-sm" id="inputAge" name="age" placeholder="E.g. 8 weeks old, 3 years old, etc."></input>
             </div>
-
             <div class="mb-3">
               <label for="inputDescription" class="col-form-label col-form-label-sm">Description</label>
               <input type="text" class="form-control form-control-sm" id="inputDescription" name="description"></input>

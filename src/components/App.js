@@ -20,7 +20,7 @@ function App() {
     setAnimals([...animals, newAnimal])
   }
   
-  function handleUpdateAnimal(updatedAnimal) {
+  const handleUpdateAnimal = (updatedAnimal) => {
     const updatedAnimals = animals.map((animal) =>
       animal.id === updatedAnimal.id ? updatedAnimal : animal
     );

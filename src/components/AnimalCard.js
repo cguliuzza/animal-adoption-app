@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card } from "react-bootstrap"
 
-// onUpdateAnimal
 function AnimalCard({ animal, handleUpdateAnimal }) {
 
     const toggle = () => {
-      // setIsAvailable(!isAvailable)
-      // console.log(isAvailable)
-
       fetch(`http://localhost:3000/animals/${animal.id}`, {
         method: "PATCH",
         headers: {
@@ -20,13 +16,7 @@ function AnimalCard({ animal, handleUpdateAnimal }) {
         handleUpdateAnimal(updatedAnimal)
         console.log(updatedAnimal)
       })
-    
     }
-
-    // function handleToggleAvailable() {
-      
-      
-
 
       // function handleDeleteClick() {
       //   fetch(`http://localhost:3000/animals/${animal.id}`, {
@@ -49,9 +39,6 @@ function AnimalCard({ animal, handleUpdateAnimal }) {
 
                {/* <button className="btn btn-warning" onClick={handleDeleteClick}>Delete</button> */}
 
-               {/*  {isAvailable ? "Available" : "Pending Adoption"} => STICK THIS IN TEXT AREA BELOW??*/}
-              {/* <button className="btn btn-primary" onClick={handleToggleAvailable}>{isAvailable ? "Available" : "Pending Adoption"}</button> */}
-
               {animal.available ? (
                 <button className="btn btn-warning" onClick={toggle}>
                   Available
@@ -64,21 +51,5 @@ function AnimalCard({ animal, handleUpdateAnimal }) {
       </>
     );
 }
-
-    // function handlePriceFormSubmit(e) {
-    //     e.preventDefault();
-    //     fetch(`http://localhost:3000/animals/${animal.id}`, {
-    //       method: "PATCH",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify({ updatedAnimal }),
-    //     })
-    //       .then((r) => r.json())
-    //       .then((updatedAnimal) => {
-    //         onUpdateAnimal(updatedAnimal);
-    //       });
-    //   }
-    
 
 export default AnimalCard;
