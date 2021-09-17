@@ -16,9 +16,16 @@ function AnimalPage() {
     setAnimals([...animals, newAnimal])
   }
   
+  function handleUpdateAnimal(updatedAnimal) {
+    const updatedAnimals = animals.map((animal) =>
+      animal.id === updatedAnimal.id ? updatedAnimal : animal
+    );
+    setAnimals(updatedAnimals);
+  }
+
   return (
     <main>
-      <AnimalList animals={animals} renderNewAnimal={renderNewAnimal} />
+      <AnimalList animals={animals} renderNewAnimal={renderNewAnimal} handleUpdateAnimal={handleUpdateAnimal} />
     </main>
   );
 }

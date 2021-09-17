@@ -13,11 +13,11 @@ const Home = () => {
                         <div class="carousel-item active" data-bs-interval="3000">
                         <img src={webinar} className="d-block w-100" alt="free webinar" />
                         </div>
-                        <div class="carousel-item" data-bs-interval="2500">
-                        <img src={dogsWalking} className="d-block w-100" alt="horse on home page" />
+                        <div class="carousel-item" data-bs-interval="3000">
+                        <img src={dogsWalking} className="d-block w-100" alt="two dogs running" />
                         </div>
                         <div class="carousel-item" data-bs-interval="3000">
-                        <img src={adoptionExperience} />
+                        <img src={adoptionExperience} className="d-block w-100" alt="adoption experience list with cat" />
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
