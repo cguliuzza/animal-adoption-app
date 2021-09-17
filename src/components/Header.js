@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "react-bootstrap"
-import logo from "/Users/christinaguliuzza/Development/code/Mod2-react/PROJECT/animal-adoption-app/my-app/src/images/logo-pink.PNG"
+import logo from "/Users/sakiona1/Phase-2-Project/animal-adoption-app/src/images/logo-pink.PNG"
 
 function Header() {
   return (

@@ -9,7 +9,7 @@
       "gender": "Male",
       "age": "2 years old",
       "description": "Charlie is a great family dog. He loves to go on walks, and playing fetch!",
-      "available": true
+      "available": false
     },
     {
       "id": 2,
@@ -87,6 +87,16 @@
       "age": "5 years old",
       "description": "Garfield loves to sunbathe and stare out the windows.",
       "available": true
+    },
+    {
+      "name": "Simba",
+      "image": "https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg",
+      "type": "Cat",
+      "breed": "Russian Blue",
+      "gender": "Male",
+      "age": "1 year old",
+      "description": "test3",
+      "id": 11
     }
   ]
 }

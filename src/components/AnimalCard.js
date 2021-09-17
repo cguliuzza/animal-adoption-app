@@ -1,32 +1,37 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card } from "react-bootstrap"
 
-// onUpdateAnimal
-function AnimalCard({ animal, handleUpdateAnimal }) {
-  const [isAvailable, setIsAvailable] = useState(true);
 
-    function handleToggleAvailable() {
+function AnimalCard({ animal, handleUpdateAnimal, handleDeleteAnimal }) {
 
-      let updatedAvailabilityValue = setIsAvailable((isAvailable) => !isAvailable)
+    const toggle = () => {
+      
 
       fetch(`http://localhost:3000/animals/${animal.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ available: updatedAvailabilityValue })
+        body: JSON.stringify({ available: !animal.available })
       })
       .then(resp => resp.json())
-      .then(updatedAnimal => handleUpdateAnimal(updatedAnimal))
-    };
+      .then(updatedAnimal => {
+        handleUpdateAnimal(updatedAnimal)
+        console.log(updatedAnimal)
+      })
+    
+    }
 
-
-      // function handleDeleteClick() {
-      //   fetch(`http://localhost:3000/animals/${animal.id}`, {
-      //     method: "DELETE",
-      //   });
-      //   onDeleteAnimal(animal.id);
-      // }
+      function handleDeleteClick() {
+        fetch(`http://localhost:3000/animals/${animal.id}`, {
+          method: "DELETE",
+        })
+        .then(res => res.json())
+        .then(() => {
+          handleDeleteAnimal(animal)
+        })
+        console.log(animal)
+      }
       
     return (
       <>
@@ -40,38 +45,18 @@ function AnimalCard({ animal, handleUpdateAnimal }) {
                   <p className="card-text">{animal.description}</p>
               <a href="/adoption-form" className="btn btn-info">View Adoption Form</a>
 
-               {/* <button className="btn btn-warning" onClick={handleDeleteClick}>Delete</button> */}
-
-               {/*  {isAvailable ? "Available" : "Pending Adoption"} => STICK THIS IN TEXT AREA BELOW??*/}
-              {/* <button className="btn btn-primary" onClick={handleToggleAvailable}>{isAvailable ? "Available" : "Pending Adoption"}</button> */}
-
-              {isAvailable ? (
-                <button className="btn btn-warning" onClick={handleToggleAvailable}>
+              {animal.available ? (
+                <button className="btn btn-warning" onClick={toggle}>
                   Available
                 </button>
               ) : (
-                <button className="btn btn-danger" onClick={handleToggleAvailable}>Pending Adoption</button>
+                <><button className="btn btn-danger" onClick={toggle}>Pending Adoption</button><button className="btn btn-warning" onClick={handleDeleteClick}>Delete</button></>
+            
               )}
             </div>
         </Card>
       </>
     );
 }
-
-    // function handlePriceFormSubmit(e) {
-    //     e.preventDefault();
-    //     fetch(`http://localhost:3000/animals/${animal.id}`, {
-    //       method: "PATCH",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify({ updatedAnimal }),
-    //     })
-    //       .then((r) => r.json())
-    //       .then((updatedAnimal) => {
-    //         onUpdateAnimal(updatedAnimal);
-    //       });
-    //   }
-    
 
 export default AnimalCard;

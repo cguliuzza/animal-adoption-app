@@ -1,8 +1,8 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
-import webinar from "/Users/christinaguliuzza/Development/code/Mod2-react/PROJECT/animal-adoption-app/my-app/src/images/Free-Webinar-training-dog-to-meet-new-people.png"
-import dogsWalking from "/Users/christinaguliuzza/Development/code/Mod2-react/PROJECT/animal-adoption-app/my-app/src/images/dogs-on-a-walk.jpeg"
-import adoptionExperience from "/Users/christinaguliuzza/Development/code/Mod2-react/PROJECT/animal-adoption-app/my-app/src/images/Adoption Experience Cat.png"
+import webinar from "/Users/sakiona1/Phase-2-Project/animal-adoption-app/src/images/Free-Webinar-training-dog-to-meet-new-people.png"
+import dogsWalking from "/Users/sakiona1/Phase-2-Project/animal-adoption-app/src/images/dogs-on-a-walk.jpeg"
+import adoptionExperience from "/Users/sakiona1/Phase-2-Project/animal-adoption-app/src/images/Adoption Experience Cat.png"
 
 const Home = () => {
     return (
@@ -10,13 +10,13 @@ const Home = () => {
             <Carousel className="carousel-element">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="carousel-item active" data-bs-interval="2000">
                         <img src={webinar} className="d-block w-100" alt="free webinar" />
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000">
+                        <div class="carousel-item" data-bs-interval="2000">
                         <img src={dogsWalking} className="d-block w-100" alt="two dogs running" />
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000">
+                        <div class="carousel-item" data-bs-interval="2000">
                         <img src={adoptionExperience} className="d-block w-100" alt="adoption experience list with cat" />
                         </div>
                     </div>

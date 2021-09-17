@@ -5,20 +5,20 @@ function NewAnimalForm({renderNewAnimal}) {
 
   function handleSubmit(e) {
     e.preventDefault()
-
+    console.log(e.target.parentElement.parentElement.name.value)
     fetch("http://localhost:3000/animals", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        name: e.target.name.value,
-        image: e.target.image.value,
-        type: e.target.type.value,
-        breed: e.target.breed.value,
-        gender: e.target.gender.value,
-        age: e.target.age.value, 
-        description: e.target.description.value
+        name: e.target.parentElement.parentElement.name.value,
+        image: e.target.parentElement.parentElement.image.value,
+        type: e.target.parentElement.parentElement.type.value,
+        breed: e.target.parentElement.parentElement.breed.value,
+        gender: e.target.parentElement.parentElement.gender.value,
+        age: e.target.parentElement.parentElement.age.value, 
+        description: e.target.parentElement.parentElement.description.value
       })
     })
     .then(res => res.json())
@@ -39,8 +39,8 @@ function NewAnimalForm({renderNewAnimal}) {
 
 
             <div class="col-md-4">
-              <label for="validationImg" class="col-form-label col-form-label-sm">Image URL</label>
-              <input type="text" class="form-control form-control-sm" id="validationImg" name="image"></input>
+              <label for="inputPicture" class="col-form-label col-form-label-sm">Image URL</label>
+              <input type="text" class="form-control form-control-sm" id="inputPicture" name="image"></input>
             </div>
 
 
