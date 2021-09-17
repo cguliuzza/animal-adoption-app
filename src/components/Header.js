@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "react-bootstrap"
+import logo from "/Users/christinaguliuzza/Development/code/Mod2-react/PROJECT/animal-adoption-app/my-app/src/images/logo-pink.PNG"
 
 function Header() {
   return (
@@ -29,10 +30,7 @@ function Header() {
           </div>
         </nav>
       </Navbar>
-      <h1>
-        Animals App
-      </h1>
-      <img src="./src/images/Logo-bright-pink.PNG" className="logo" role="img" alt="Happy Tails Pet Adoption Logo" />
+      <img src={logo} className="logo" alt="Happy Tails Pet Adoption Logo" />
     </header>
   );
 }

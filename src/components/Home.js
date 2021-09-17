@@ -1,20 +1,23 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
+import webinar from "/Users/christinaguliuzza/Development/code/Mod2-react/PROJECT/animal-adoption-app/my-app/src/images/Free-Webinar-training-dog-to-meet-new-people.png"
+import dogsWalking from "/Users/christinaguliuzza/Development/code/Mod2-react/PROJECT/animal-adoption-app/my-app/src/images/dogs-on-a-walk.jpeg"
+import adoptionExperience from "/Users/christinaguliuzza/Development/code/Mod2-react/PROJECT/animal-adoption-app/my-app/src/images/Adoption Experience Cat.png"
 
 const Home = () => {
     return (
         <div>
-            <Carousel>
+            <Carousel className="carousel-element">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtpeG-v3apuTCERMYpAfPnAOYQ56JVnApSBA&usqp=CAU" className="d-block w-100" alt="dog on home page" />
+                        <img src={webinar} className="d-block w-100" alt="free webinar" />
                         </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxROFCYDN6CQPPIC1UiHPsOWuAHATC3fHqDA&usqp=CAU" className="d-block w-100" alt="horse on home page" />
+                        <div class="carousel-item" data-bs-interval="3000">
+                        <img src={dogsWalking} className="d-block w-100" alt="two dogs running" />
                         </div>
-                        <div class="carousel-item">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4it_Jqeo2FMOA-0f2yJk5uYJ3YTa1j7MVSA&usqp=CAU" className="d-block w-100" alt="cat on home page" />
+                        <div class="carousel-item" data-bs-interval="3000">
+                        <img src={adoptionExperience} className="d-block w-100" alt="adoption experience list with cat" />
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

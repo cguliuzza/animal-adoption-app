@@ -8,17 +8,19 @@
       "breed": "Beagle Mix",
       "gender": "Male",
       "age": "2 years old",
-      "description": "Charlie is a great family dog. He loves to go on walks, and playing fetch!"
+      "description": "Charlie is a great family dog. He loves to go on walks, and playing fetch!",
+      "available": true
     },
     {
-        "id": 2,
-        "name": "Melody",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgHhUFxs-VKN9087aar1Q0nJByU9bHo1Sftg&usqp=CAU",
-        "type":"dog",
-        "breed":"Golden Retriever",
-        "gender": "Female",
-        "age":"10 weeks old",
-        "description":"Melody loves snuggles! She is playful, and is content with hanging out."
+      "id": 2,
+      "name": "Melody",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgHhUFxs-VKN9087aar1Q0nJByU9bHo1Sftg&usqp=CAU",
+      "type": "dog",
+      "breed": "Golden Retriever",
+      "gender": "Female",
+      "age": "10 weeks old",
+      "description": "Melody loves snuggles! She is playful, and is content with hanging out.",
+      "available": false
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "breed": "Pitbull",
       "gender": "Female",
       "age": "8 weeks old",
-      "description": "Smalls loves to cuddle! She is energetic, loves to run around and play."
+      "description": "Smalls loves to cuddle! She is energetic, loves to run around and play.",
+      "available": false
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "breed": "German Shepard",
       "gender": "Male",
       "age": "3 years old",
-      "description": "Zeus is a smart, obedient, loving dog. He loves to go on daily walks to the park and play fetch"
+      "description": "Zeus is a smart, obedient, loving dog. He loves to go on daily walks to the park and play fetch",
+      "available": true
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "breed": "Russian Blue",
       "gender": "Male",
       "age": "8 months old",
-      "description": "Milo is curious. He loves to cuddle, and play."
+      "description": "Milo is curious. He loves to cuddle, and play.",
+      "available": true
     },
     {
       "id": 6,
@@ -58,17 +63,19 @@
       "breed": "American Shorthair",
       "gender": "Female",
       "age": "6 weeks old",
-      "description": "Missy is a sassy cat, who loves to cuddle and play"
+      "description": "Missy is a sassy cat, who loves to cuddle and play",
+      "available": true
     },
     {
       "id": 7,
       "name": "Willow",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHFKTvNxFDMgyGwHtf1Nwu52LTU0kePM68ww&usqp=CAU",
-      "type": "dog",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA5i8yh6QX-NAjEPcQlBP3Kd1YBq-52QSIRw&usqp=CAU",
+      "type": "cat",
       "breed": "Siamese",
       "gender": "Female",
       "age": "3 years old",
-      "description": "Willow loves the company of other cats, she is independent and enjoys snuggles before bedtime."
+      "description": "Willow loves the company of other cats, she is independent and enjoys snuggles before bedtime.",
+      "available": true
     },
     {
       "id": 8,
@@ -78,7 +85,38 @@
       "breed": "Tabby",
       "gender": "Male",
       "age": "5 years old",
-      "description": "Garfield loves to sunbathe and stare out the windows. "
+      "description": "Garfield loves to sunbathe and stare out the windows.",
+      "available": true
+    },
+    {
+      "name": "Simba",
+      "image": "https://static.wikia.nocookie.net/pixar/images/a/a7/BEST_MRS.POTATO_HEAD_EVER.png/revision/latest/top-crop/width/360/height/360?cb=20210210225058",
+      "type": "Cat",
+      "breed": "Russian Blue",
+      "gender": "Male",
+      "age": "1 year old",
+      "description": "test2",
+      "id": 9
+    },
+    {
+      "name": "Simba",
+      "image": "https://static.wikia.nocookie.net/pixar/images/a/a7/BEST_MRS.POTATO_HEAD_EVER.png/revision/latest/top-crop/width/360/height/360?cb=20210210225058",
+      "type": "Cat",
+      "breed": "Russian Blue",
+      "gender": "Male",
+      "age": "1 year old",
+      "description": "test2",
+      "id": 10
+    },
+    {
+      "name": "Simba",
+      "image": "https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg",
+      "type": "Cat",
+      "breed": "Russian Blue",
+      "gender": "Male",
+      "age": "1 year old",
+      "description": "test3",
+      "id": 11
     }
   ]
 }

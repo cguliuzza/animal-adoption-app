@@ -1,9 +1,9 @@
 import React from "react";
 import AnimalCard from "./AnimalCard";
 
-function AnimalList({animals}) {
+function AnimalList({animals, handleUpdateAnimal}) {
   return (
-    <ul className="cards">{animals.map(animal=> <AnimalCard animal={animal}/>)} </ul>
+    <ul className="cards">{animals.map(animal=> <AnimalCard animal={animal} key={animal.id} handleUpdateAnimal={handleUpdateAnimal} />)} </ul>
   );
 }
 

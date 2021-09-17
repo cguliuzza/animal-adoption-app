@@ -31,13 +31,7 @@ button.primary {
 .app {
   margin: 0 auto;
   max-width: 1200px;
-}
-
-header h1 {
-  font-size: 2.5em;
-  font-weight: 900;
-  text-align: center;
-  padding: 0.5rem 0;
+  margin-bottom: 50px;
 }
 
 header nav {
@@ -49,61 +43,62 @@ nav {
   text-align: center;
   margin: 20px 0 0 ;
   padding: 10px 0;
-  }
+}
   
-  nav ul{
-    list-style: none;
-    margin: 0 2px;
-    padding: 0;
-  }
+nav ul{
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+}
   
-  nav li {
-     display: inline-block;
-     padding: 5px 5px;
-  }
+nav li {
+  display: inline-block;
+  padding: 5px 5px;
+}
   
-  nav a {
-    font-weight: normal;
-    padding: 10px 5px;
-    font-size: .80em;
-  }
+nav a {
+  font-weight: normal;
+  padding: 10px 5px;
+  font-size: .80em;
+}
 
 .logo {
-  font-size: 1.25em;
-  padding-left: 0.5rem;
-  color: transparent;
-  text-shadow: 0 0 0 var(--green);
+  width: 30%;
+  height: 30%;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+.carousel-element {
+  width: 100%;
+  height: 100%;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
   padding: 0 1rem;
 }
 
-.new-animal-form {
+.adoption-form form {
+  display: flex;
   padding: 2rem 1rem;
   margin: 2rem 0;
-  background-color: rgba(181, 250, 181, 0.5);
 }
 
-.new-animal-form form {
-  display: flex;
-  justify-content: center;
-}
-
-.new-animal-form input {
-  margin-right: 2rem;
-  flex: 1;
-}
-
-.new-animal-form button {
-  width: 150px;
-}
-
-.searchbar {
+/* .searchbar {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-}
+} */
 
 label {
   font-weight: bold;
@@ -137,6 +132,14 @@ input:focus {
   width: 100%;
 }
 
+.card-img-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  object-fit:cover;
+}
+
 .card button {
   margin-top: 0.5rem;
 }
@@ -160,7 +163,7 @@ input:focus {
 
 @media (min-width: 1200px) {
   .card {
-    width: calc(20% - 2rem);
+    width: calc(25% - 2rem);
   }
-}
+} 
 
