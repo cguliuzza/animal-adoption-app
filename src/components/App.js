@@ -36,6 +36,7 @@ return (
     <div className="app">
       <BrowserRouter>
         <Header />
+
         <Route exact path="/animals" component={() => <AnimalPage animals={animals} handleUpdateAnimal={handleUpdateAnimal} handleDeleteAnimal={handleDeleteAnimal} />} />
         <Route exact path="/new" component={() => <NewAnimalForm renderNewAnimal={renderNewAnimal} />} />
         <Route exact path="/adoption-form" component={AdoptionForm} />

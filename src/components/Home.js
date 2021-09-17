@@ -10,6 +10,7 @@ const Home = () => {
             <Carousel className="carousel-element">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
+
                         <div class="carousel-item active" data-bs-interval="2000">
                         <img src={webinar} className="d-block w-100" alt="free webinar" />
                         </div>

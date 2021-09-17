@@ -9,7 +9,7 @@
       "gender": "Male",
       "age": "2 years old",
       "description": "Charlie is a great family dog. He loves to go on walks, and playing fetch!",
-      "available": false
+      "available": true
     },
     {
       "id": 2,
@@ -89,14 +89,15 @@
       "available": true
     },
     {
+      "id": 9,      
       "name": "Simba",
       "image": "https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg",
       "type": "Cat",
-      "breed": "Russian Blue",
+      "breed": "Domestic Shorthair",
       "gender": "Male",
       "age": "1 year old",
-      "description": "test3",
-      "id": 11
+      "description": "He's the alarm clock in the mornings! His playfulness is entertaining to watch.",
+      "available": true    
     }
   ]
 }

@@ -1,11 +1,9 @@
 import React from "react";
 import { Card } from "react-bootstrap"
 
-
 function AnimalCard({ animal, handleUpdateAnimal, handleDeleteAnimal }) {
 
     const toggle = () => {
-      
 
       fetch(`http://localhost:3000/animals/${animal.id}`, {
         method: "PATCH",
@@ -21,6 +19,7 @@ function AnimalCard({ animal, handleUpdateAnimal, handleDeleteAnimal }) {
       })
     
     }
+
 
       function handleDeleteClick() {
         fetch(`http://localhost:3000/animals/${animal.id}`, {
@@ -50,6 +49,7 @@ function AnimalCard({ animal, handleUpdateAnimal, handleDeleteAnimal }) {
                   Available
                 </button>
               ) : (
+                
                 <><button className="btn btn-danger" onClick={toggle}>Pending Adoption</button><button className="btn btn-warning" onClick={handleDeleteClick}>Delete</button></>
             
               )}
