@@ -27,11 +27,17 @@ function App() {
     setAnimals(updatedAnimals);
   }
 
+  function handleDeleteAnimal(deleteAnimal) {
+    const availableAnimals = animals.filter((animal) => animal.id !== deleteAnimal.id);
+    setAnimals(availableAnimals)
+  }
+
 return (
     <div className="app">
       <BrowserRouter>
         <Header />
-        <Route exact path="/animals" component={() => <AnimalPage animals={animals} handleUpdateAnimal={handleUpdateAnimal} />} />
+
+        <Route exact path="/animals" component={() => <AnimalPage animals={animals} handleUpdateAnimal={handleUpdateAnimal} handleDeleteAnimal={handleDeleteAnimal} />} />
         <Route exact path="/new" component={() => <NewAnimalForm renderNewAnimal={renderNewAnimal} />} />
         <Route exact path="/adoption-form" component={AdoptionForm} />
         <Route exact path="/" component={Home} />
