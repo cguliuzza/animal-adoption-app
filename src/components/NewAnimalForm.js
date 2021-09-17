@@ -39,14 +39,14 @@ function NewAnimalForm({renderNewAnimal}) {
 
 
             <div class="col-md-4">
-              <label for="inputImg" class="col-form-label col-form-label-sm">Image URL</label>
-              <input type="text" class="form-control form-control-sm" id="inputImg" name="image"></input>
+              <label for="validationImg" class="col-form-label col-form-label-sm">Image URL</label>
+              <input type="text" class="form-control form-control-sm" id="validationImg" name="image"></input>
             </div>
 
 
 
             <div class="col-md-4">
-              <label for="inputType" class="col-form-label col-form-label-sm">Type</label>
+              <label for="Type" class="col-form-label col-form-label-sm">Type</label>
               <input type="text" class="form-control form-control-sm" id="inputType" name="type" placeholder="E.g. Dog, cat, etc."></input>
             </div>
 
